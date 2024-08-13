@@ -77,7 +77,7 @@ export default function Email({ setShowEmail, url }) {
     try {
       axios
         .post(
-          "https://analytiq4.com/aiphotobooth/aiphotobooth_bluehat/emailer/index.php",
+          "https://analytiq4.com/aiphotobooth/aiphotobooth_gaar/emmailer/index.php",
           {
             url: url,
             email: userEmail,
