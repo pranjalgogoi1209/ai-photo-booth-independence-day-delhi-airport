@@ -77,7 +77,7 @@ export default function Email({ setShowEmail, url }) {
     try {
       axios
         .post(
-          "https://analytiq4.com/aiphotobooth/aiphotobooth_gaar/emmailer/index.php",
+          "https://analytiq4.com/aiphotobooth/aiphotobooth_gaar/emailer/index.php",
           {
             url: url,
             email: userEmail,
@@ -145,7 +145,7 @@ export default function Email({ setShowEmail, url }) {
         />
         <button onClick={handleSubmit} className={`btn1 ${styles.submit}`}>
           <ScaleLoader
-            color={"#fff"}
+            color={"#ec6519"}
             loading={loading}
             cssOverride={override}
             size={35}

@@ -86,7 +86,7 @@ export default function AvatarPage({
     // console.log("submitting selected avatar");
 
     setGeneratedImg("");
-    if (capturedImg) {
+    if (capturedImg && selectedImageIndex) {
       base64(originalImg, (base64Data) => {
         // console.log("Base64 data:", base64Data);
         setSelectedImage(base64Data);
@@ -115,7 +115,7 @@ export default function AvatarPage({
       });
     } else {
       toast.error(
-        "Please select an image or capture your photo again...",
+        "Please choose a template or capture your photo again...",
         toastOptions
       );
     }
@@ -123,7 +123,7 @@ export default function AvatarPage({
 
   return (
     <div className={`flex-col-center ${styles.AvatarPage}`}>
-      <h1>PICK YOUR CHARACTER</h1>
+      <h1>CHOOSE A TEMPLATE</h1>
 
       <main className={`flex-col-center ${styles.main}`}>
         {cardsArr?.map((img, index) => (
