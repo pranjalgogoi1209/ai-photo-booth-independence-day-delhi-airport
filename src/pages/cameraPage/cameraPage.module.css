@@ -1,6 +1,6 @@
 .CameraPage {
   /* border: 1px solid black; */
-  height: calc(100vh - 36.5vw);
+  height: calc(100dvh - 36.5vw);
   padding: 5vw 0;
   gap: 15vw;
   justify-content: flex-start !important;
